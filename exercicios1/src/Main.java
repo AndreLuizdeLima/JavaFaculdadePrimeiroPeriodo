@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
+
+
 public class Main {
     public static void main(String[] args) {
-
 
     }
 
@@ -56,6 +57,42 @@ public class Main {
 
         System.out.println("Area: " + area);
         System.out.println("Perimetro: " + perimetro);
+    }
+
+    public static void  at5(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ender number A: ");
+        double numberA = sc.nextDouble();
+        System.out.print("Ender number B: ");
+        double numberB = sc.nextDouble();
+        System.out.print("Ender number C: ");
+        double numberC = sc.nextDouble();
+        Bhaskara bhaskara = new Bhaskara();
+        bhaskara.calcular(numberA,numberB,numberC);
+        sc.close();
+    }
+
+    public  static void at6(){
+
+    }
+
+    public static void at7(){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("============= Calculadora de Dolar =============");
+
+        System.out.print("Cotação do Dolar em relação ao Real: ");
+        double cotacaoDolar = sc.nextDouble();
+        System.out.println("Informe a sua quantidade de Dolares: ");
+        double quantidadeDolar = sc.nextDouble();
+
+
+        double totalDolar = cotacaoDolar * quantidadeDolar;
+
+        System.out.println("A contação do dolar hoje é: " + cotacaoDolar + "para 1 Real");
+
+        System.out.println("Total de dolares em Reais: " + totalDolar);
+
     }
 
 
