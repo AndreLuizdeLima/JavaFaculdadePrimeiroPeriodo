@@ -72,7 +72,7 @@ public class Main {
         sc.close();
     }
 
-    public  static void at6(){
+    public  static void at6() {
 
     }
 
