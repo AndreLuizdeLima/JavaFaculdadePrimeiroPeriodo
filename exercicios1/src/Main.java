@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
+        at8();
     }
 
     public static void at1(){
@@ -74,6 +76,9 @@ public class Main {
 
     public  static void at6() {
 
+//        double f;
+//        f = Math.sqrt((1 / (1 * c)) - ( ( (r ^ 2) / ((4 * c)^2) ));
+
     }
 
     public static void at7(){
@@ -93,6 +98,44 @@ public class Main {
 
         System.out.println("Total de dolares em Reais: " + totalDolar);
 
+    }
+
+    public static void at8(){
+
+        double quantVoteA;
+        double quantVoteB;
+        double quantVoteC;
+        double quantVoteNull;
+        double quantVoteBranco;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Quantidade votos A: ");
+        quantVoteA = sc.nextDouble();
+        System.out.print("Quantidade votos B: ");
+        quantVoteB = sc.nextDouble();
+        System.out.print("Quantidade votos C: ");
+        quantVoteC = sc.nextDouble();
+        System.out.print("Quantidade votos Nulos: ");
+        quantVoteNull = sc.nextDouble();
+        System.out.print("Quantidade votos Brancos: ");
+        quantVoteBranco = sc.nextDouble();
+
+        double totalVote = quantVoteA + quantVoteB + quantVoteC + quantVoteNull + quantVoteBranco;
+
+        double porcentagemA = (quantVoteA * 100) / totalVote;
+        double porcentagemB = (quantVoteB * 100) / totalVote;
+        double porcentagemC = (quantVoteC * 100) / totalVote;
+        double porcentagemNUll = (quantVoteNull * 100) / totalVote;
+        double porcentagemBranco = (quantVoteBranco * 100) / totalVote;
+
+        System.out.println("Total de votos: "+ totalVote);
+        System.out.println("Porcentagem de votos A: " + String.format("%.2f",porcentagemA));
+        System.out.println("Porcentagem de votos B: " + String.format("%.2f",porcentagemB));
+        System.out.println("Porcentagem de votos C: " + String.format("%.2f",porcentagemC));
+        System.out.println("Porcentagem de votos Nulos: " + String.format("%.2f",porcentagemNUll));
+        System.out.println("Porcentagem de votos Brancos: " + String.format("%.2f",porcentagemBranco));
+
+        sc.close();
     }
 
 
