@@ -8,7 +8,7 @@ public class Main {
 
         System.out.print("Informe o valor que você deseja sacar: ");
         double saque = sc.nextDouble();
-
+        double valorInicial = saque;
         double quantidadeNotas200 = (int) saque / 200;
         saque = (saque % 200);
 
@@ -65,5 +65,7 @@ public class Main {
         System.out.println("Moedas de 1 cents: " +quantidadeMoedas1);
 
         sc.close();
+
+        System.out.println("Valor que sobrou " + saque);
     }
 }
